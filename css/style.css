@@ -1,6 +1,5 @@
 body {
-  font-family: clearsansregular;
-  color: #fff;
+  font-family: sans-serif;
 }
 
 /* Make content area fill the entire browser window */
@@ -11,7 +10,10 @@ html,
   margin: 0;
   padding: 0;
   width: 100%;
-  background-image: url("../images/bgtest.jpg");
+  background-image: url("../images/pwa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Center the content in the browser window */
@@ -22,4 +24,18 @@ html,
 
 .title {
   font-size: 3rem;
+}
+
+.greetings {
+  height: 70vh;
+  overflow: auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 1rem;
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
