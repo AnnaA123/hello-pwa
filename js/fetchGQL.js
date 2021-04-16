@@ -1,18 +1,20 @@
 const fetchGraphql = async (query) => {
   const options = {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
+      "Content-Type": "application/json",
+      Accept: "application/json",
     },
     body: JSON.stringify(query),
   };
   try {
-    const response = await fetch('https://greeting.jelastic.metropolia.fi/graphql', options);
+    const response = await fetch(
+      "https://greeting.jelastic.metropolia.fi/graphql",
+      options
+    );
     const json = await response.json();
     return json.data;
-  }
-  catch (e) {
+  } catch (e) {
     console.log(e);
     return false;
   }
