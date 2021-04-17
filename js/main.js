@@ -21,6 +21,7 @@ window.addEventListener("load", async () => {
           };
           try {
             saveData("outbox", message);
+            await registration.sync.register("send-message");
           } catch (e) {
             console.log(e.message);
           }
